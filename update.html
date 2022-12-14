@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UPDATE</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div class="flex justify-center items-center text-white h-screen bg-black font-semibold ">
+    <form
+      class="bg-gradient-to-b from-emerald-900 text-md xl:text-xl px-12 md:px-20 xl:px-32 py-10 md:py-20 xl:py-32 border-emerald-600 border-2 rounded-md shadow-2xl shadow-emerald-500">
+      <div class="text-center flex flex-col py-3">
+        <label>MODEL</label>
+        <input id="model" class="text-black xl:px-16 py-1 rounded-full my-2" type="text">
+      </div>
+      <div class="text-center flex flex-col py-3">
+        <label>IMAGE</label>
+        <input id="image" class="text-black xl:px-16 py-1 rounded-full my-2" type="text">
+      </div>
+      <input class="hover:text-emerald-500 hover:border-emerald-500 border rounded-sm py-1 px-3 xl:px-6 mx-5 xl:mx-12 mt-5 xl:mt-10"
+        type="submit" id="submitBtn" value="UPDATE">
+      <input class="hover:text-red-500 hover:border-red-500 border rounded-sm py-1 px-4"
+        type="submit" id="deleteBtn" value="DELETE">
+    </form>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./scripts/crud.js"></script>
+  <script src="./scripts/update.js"></script>
+</body>
+
+</html>

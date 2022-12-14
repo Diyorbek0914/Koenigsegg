@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Megacars</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header class="px-6 lg:px-20 py-2 lg:py-4 bg-black border-b">
+    <div class="flex justify-between items-center space-x-16 sm:space-x-28 md:space-x-52 lg:space-x-80">
+      <a href="./index.html">
+        <img class="w-20 md:w-40 xl:w-52"
+          src="https://villageautomotive.com/wp-content/uploads/Koenigsegg-White-OEM-Logo.png" alt="logotip" />
+      </a>
+      <div
+        class="flex justify-center space-x-1 lg:space-x-16 text-white font-extrabold font-mono text-xs md:text-lg xl:text-2xl">
+        <a class="hover:border-white hover:border-b py-1 sm:py-3 lg:py-3 px-1 sm:px-4 lg:px-12"
+          href="./megacrs.html">MEGACARS</a>
+        <a class="hover:border-white hover:border-b py-1 sm:py-3 lg:py-3 px-1 sm:px-4 lg:px-12"
+          href="./technology.html">TECHNOLOGY</a>
+        <a class="hover:border-white hover:border-b py-1 sm:py-3 lg:py-3 px-1 sm:px-4 lg:px-12"
+          href="./create.html">CREATE</a>
+      </div>
+    </div>
+  </header>
+  <section class="bg-black">
+    <div class="bg-black text-white">
+      <h1 class="text-4xl xl:text-7xl font-semibold mx-20 py-5">MODELS</h1>
+    </div>
+    <div id="myDiv" class="grid grid-cols-1 lg:grid-cols-2 gap-16 bg-black text-white mx-16"></div>
+  </section>
+
+  <footer class="bg-black text-white border-t">
+    <div class="flex justify-between px-8 sm:px-16 lg:px-20 py-16 md:py-28 md:items-center">
+      <div>
+        <h3 class="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold">THE <br>
+          <span class="ml-6 md:ml-14 xl:ml-28">SHOW</span><br>
+          <span>MUST</span> <br>GO ON
+        </h3>
+      </div>
+      <div
+        class="flex items-start flex-col md:flex-row md:space-x-16 lg:space-x-28 space-y-2 sm:mr-16 md:ml-16 lg:mr-20">
+        <div class="flex flex-col space-y-2">
+          <a href="#">MEGACARS</a>
+          <a href="#">TECHNOLOGY</a>
+          <a href="#">ABOUT</a>
+          <a href="#">HISTORY</a>
+        </div>
+        <div class="flex flex-col space-y-2">
+          <a href="#">DEALER LOCATOR</a>
+          <a href="#">SHOP</a>
+          <a href="#">CONTACT</a>
+        </div>
+        <div class="flex flex-col space-y-2">
+          <a href="#">CAREERS</a>
+          <a href="#">PRESS</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./scripts/crud.js"></script>
+  <script src="./scripts/main.js"></script>
+</body>
+
+</html>
